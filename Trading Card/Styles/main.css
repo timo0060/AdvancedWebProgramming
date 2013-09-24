@@ -1,0 +1,81 @@
+﻿body{
+	background-color: #1C1C1C;
+}
+#body{
+	float:left;
+	padding:3em;
+	color: #CC9900;
+	background-color: #111111;
+	border:thick solid #4A0000;
+	border-radius: 3em;
+	text-align:center;
+	
+	width:600px;
+	height:750px;;
+}
+header{
+	text-align:left;
+	padding: 1% 10%;
+	font-size:x-large;
+	color:#CC9900;
+	background-color: #222222;
+	text-decoration:underline;
+	border:medium #4A0000 solid;
+	border-radius: 2em;
+}
+
+section{
+	margin:1% 10%;
+	padding: 1% 5%;
+	background-color: #222222; 
+	border:medium #4A0000 solid;
+	border-radius: 2em;
+	
+	height:25%;
+}
+
+footer{
+	margin:1% 25%;
+	padding: 2% 5%;
+	background-color: #222222; 
+	border:medium #4A0000 solid;
+	border-radius: 2em;
+}
+
+#level{
+	float:right;
+	text-decoration:underline;
+}
+
+#logo{
+	padding:4%;
+	margin:1% 15%;
+	width:auto;
+	height:auto;
+	border:medium #4A0000 solid;
+	border-radius: 2em;
+	background-color:#222222;
+	font-size:small;
+	text-align:center;
+}
+
+.logo{
+	
+	width:auto;
+	height:auto;	
+}
+
+#skillHeader{
+	font-size:x-large;
+	text-align:center;
+}
+
+#left{
+	text-align:left;
+	float: left;
+}
+
+#right{
+	text-align:right;
+	float:right;
+}

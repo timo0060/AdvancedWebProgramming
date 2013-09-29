@@ -4,7 +4,7 @@
 }
 
 header{
-	margin: 1% 10%;
+	margin: 1% 15%;
 	padding:1% 5%;
 	background-color:#6699FF;
 	border:thick black solid;
@@ -12,15 +12,15 @@ header{
 }
 
 nav{
-	margin: 1% 32%;
-	padding: 1% auto;
+	margin: 0.5% 22%;
+	padding: auto;
 	text-align:center;
 	background-color: white;
 	color: #003399;
 	border: medium navy solid;
 	border-radius: 5em;
 	
-	font-size:25px;
+	font-size:23px;
 	
 	box-shadow: 5px 5px 15px navy;
 }
@@ -36,10 +36,30 @@ section{
 	border:thick black solid;
 	border-radius: 5em;
 }
+
+article{
+	background-color:white;
+	padding: 1% 3%;
+	border: thin white solid;
+	border-radius: 5em;
+	
+	box-shadow: 5px 8px 10px grey;
+}
+
 section h1{
 	text-indent: 2em;
 }
+
 .bodyText{
 	text-indent: 2em;
 	font-size: 18px;
+}
+
+footer{
+	text-align:center;
+	margin: 2% 40%;
+	padding: 1% 2%;
+	background-color:#6699FF;
+	border:thick black solid;
+	border-radius: 5em;
 }

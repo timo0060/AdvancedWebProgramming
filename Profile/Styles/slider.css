@@ -1,0 +1,17 @@
+﻿.slider{
+	width: 603px;
+	height: 410px;
+	overflow:hidden;
+	margin: 30px auto;
+	
+	background-image:url('../Images/load.gif');
+	background-repeat:no-repeat;
+	
+	background-position:center;
+}
+
+.slider img{
+	width: 603px;
+	height:410px;
+	display:none;	
+}

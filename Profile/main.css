@@ -12,15 +12,15 @@ header{
 }
 
 nav{
-	margin: 1% 32%;
-	padding: 1% auto;
+	margin: 0.5% 25%;
+	padding: auto;
 	text-align:center;
 	background-color: white;
 	color: #003399;
 	border: medium navy solid;
 	border-radius: 5em;
 	
-	font-size:25px;
+	font-size:23px;
 	
 	box-shadow: 5px 5px 15px navy;
 }

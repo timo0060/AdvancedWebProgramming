@@ -5,6 +5,8 @@
 <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
 <link href="Styles/main.css" type="text/css" rel="stylesheet" />
 <link href="Styles/slider.css" type="text/css" rel="stylesheet" />
+<link href="Styles/article.css" type="text/css" rel="stylesheet" />
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
 
@@ -48,7 +50,14 @@
 	</header>
 	
 	<section>
-		<article>
+		<article id="slider">
+			<div class="slider" onclick="location.href='projects.html';" style="cursor:pointer;">
+				<img id="1" src="Images/salesbonus.png" alt="SalesBonus" />
+				<img id="2" src="Images/sega.png" alt="SegaGenesis" />
+				<img id="3" src="Images/contentmanager.png" alt="ContentManager" />
+			</div>
+		</article><br><br>
+		<article id="welcome">
 			<h1><u>Welcome</u></h1>
 			<p class="bodyText">
 			Welcome to the portfolio of <em><a href="about.html">Tim Radder</a></em>. I am a college student studying to becoming a computer programming analyst. 
@@ -58,17 +67,18 @@
 			will enjoy and love to play. To bring entertainment to people and to bring them together is what I want to accomplish by learning more and more
 			 about programming.
 		</p>
-		</article>	<br><br>
-		<article>
-			<div class="slider" onclick="location.href='projects.html';" style="cursor:pointer;">
-				<img id="1" src="Images/salesbonus.png" alt="SalesBonus" />
-				<img id="2" src="Images/sega.png" alt="SegaGenesis" />
-				<img id="3" src="Images/contentmanager.png" alt="ContentManager" />
-			</div>
+		</article> <br><br>
+		<article id="stayConnected">
+			<h1><u>Stay Connected</u></h1>
+			<a href="https://www.facebook.com/timothyradder"><img src="Images/facebook.png" width="55px" height="55px" /></a>
+			<a href="https://twitter.com/timo0060https://twitter.com/timo0060"><img src="Images/twitter.png" width="55px" height="55px" /></a>
+			<a href="https://plus.google.com/u/0/105950199526923029875"><img src="Images/googleplus.png" width="55px" height="55px" /></a>
 		</article>	
 	</section>
 	<footer>
-		Copyright @ 2013 Tim Radder
+		<article>
+			Copyright @ 2013 Tim Radder
+		</article>
 	</footer>
 </body>
 

@@ -1,13 +1,93 @@
-﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+﻿<!DOCTYPE html>
+<html>
 
 <head>
 <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
-<title>Untitled 1</title>
+<link href="Styles/main.css" type="text/css" rel="stylesheet" />
+<link href="Styles/slider.css" type="text/css" rel="stylesheet" />
+<link href="Styles/article.css" type="text/css" rel="stylesheet" />
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+
+<script type="text/javascript">
+
+	function Slider(){
+		$(".slider #1").show("fade", 500);
+		$(".slider #1").delay(5500).hide("slide", {direction: "left"}, 500);
+
+	
+		var slideSize = $(".slider img").size();
+		var count = 2;		
+		
+		setInterval(function(){
+			$(".slider #" + count).show("slide", {direction: "right"}, 500);
+			$(".slider #" + count).delay(5500).hide("slide", {direction: "left"}, 500);
+			
+			if(count == slideSize){
+				count = 1;
+			}else{
+				count = count + 1;
+			}
+		}, 6500);
+		
+	}
+
+</script>
+
+<title>Home</title>
 </head>
 
-<body>
+<body onload="Slider();">
+	<header>
+		<div id="logo">
+			<img alt="logo" title="Logo" src="Images/Sun-LockDown-Logo-200-x-200-Red.png" />
+		</div>
+		<nav>
+			<p><a href="index.html">Home</a>   ||   <a href="about.html">About</a>   ||  <a href="projects.html">Projects</a>   ||  <a href="services.html">Services</a>   
+					||   <a href="https://github.com/timo0060">GitHub</a>   ||   <a href="contact.html">Contact Me</a></p>
+		</nav>
+	</header>
+	
+	<section>
+		<article id="bio">
+			<img src="Images/profilePic.png" alt="ProfilePic" class="photo"/>
+			<h1><u>Early Life</u></h1>
+			<p class="bodyText">
+				My name is Timothy Mathew Radder, and I was born July 13th, 1994 in Newmarket, Ontario. From a young age I was always fascinated with computers
+				and wanted to more with them. I would play many games on my old computers and "attempt" to upgrade them, but with my very basic , almost non-exsistent,
+				knowledge back then, I would almost always have something go wrong. I learned from those mistakes however, and slowly gained more knowledge over the years.
+			</p>
+			<h1><u>Early Education</u></h1>
+			<p class="bodyText">
+				I attended Baxter Central Public School from Kindergarten to Grade 8. From there I went on to attend Bear Creek Secondary School, which helped further my knowledge
+				in computers and set in motion my desire to become a Computer programmer. In Grade 11 I took a computer programming class, where I learned basic java and basic JApplets
+				and I exceeded in that class. I took the Grade 12 Computer Programmer class and developed my java skills even more. Along with these two computer programming classes,
+				I took three Computer Engineering classes. One in Grade 10, one in Grade 11, and one in Grade 12. I finished the Grade 12 class with the highest mark in my class at a 97% overall.
+				Throughout my Highschool studies, I managed to obtain honour role all four years and graduate with one of the highest averages.				 
+			</p>
+			<h1><u>Current Education</u></h1>
+			<p class="bodyText">
+				I am currently attending Georgian College for Computer Programmer Analyst. My Highschool education prepared me quite well for College and has made
+				grasping the concepts and knowledge a lot easier for me. I'm very excited to put my new found knowledge into practice with a hopeful great, and successful Co-Op
+				this winter. 	 
+			</p>
+			<h1><u>Work Experience</u></h1>
+			<p class="bodyText">
+				I haven't had a job in the IT industry as a professional, but I am often asked by friends and family to help them solve their computer problems. 
+				My first job was cleaning up various plaza's throughout Barrie Ontario with two of my brothers and my father, getting paid next to nothing. As I was just in highschool t the time and having
+				no need to spend money, it was ok. That lasted for about a year and a half until we couldn't take it any longer. After that, I got a job for a week as a door to 
+				door salesperson selling satellite internet. I quickly found something else though, because I didn't believe in the product. I worked for a month and a half at a concrete construction company
+				as a temp before finding my current job as a Tim Hortons employee.
+			</p>
 
+		</article>
+	</section>
+	<footer>
+		<article>
+			Copyright @ 2013 Tim Radder
+		</article>
+	</footer>
 </body>
 
 </html>

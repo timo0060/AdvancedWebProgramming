@@ -18,7 +18,20 @@
 	text-align:center;
 }
 
+#stayConnected h1{
+	text-indent: 0;
+}
+
 #slider{
 	margin:0.5% 20%;
 	padding: 2% 5%;
+}
+
+#bio{
+	padding: 3% 5%;
+}
+
+.photo{
+	float:left;
+	padding-right: 2%;
 }

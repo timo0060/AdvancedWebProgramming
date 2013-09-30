@@ -54,6 +54,10 @@ h1{
 	text-align:center;
 }
 
+li{
+list-style-type:none;
+}
+
 footer{
 	text-align:center;
 	margin: 2% 40%;

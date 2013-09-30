@@ -1,0 +1,160 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<link href="Styles/main.css" type="text/css" rel="stylesheet" />
+<link href="Styles/slider.css" type="text/css" rel="stylesheet" />
+<link href="Styles/article.css" type="text/css" rel="stylesheet" />
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+
+<script type="text/javascript">
+
+	function Slider(){
+		$(".slider #1").show("fade", 500);
+		$(".slider #1").delay(5500).hide("slide", {direction: "left"}, 500);
+
+	
+		var slideSize = $(".slider img").size();
+		var count = 2;		
+		
+		setInterval(function(){
+			$(".slider #" + count).delay(500).show("slide", {direction: "right"}, 500);
+			$(".slider #" + count).delay(5500).hide("slide", {direction: "left"}, 500);
+			
+			if(count == slideSize){
+				count = 1;
+			}else{
+				count = count + 1;
+			}
+		}, 6500);
+		
+	}
+
+</script>
+
+<title>Home</title>
+</head>
+
+<body onload="Slider();">
+	<header>
+		<div id="logo">
+			<img alt="logo" title="Logo" src="Images/Sun-LockDown-Logo-200-x-200-Red.png" />
+		</div>
+		<nav>
+			<p><a href="index.html">Home</a>   ||   <a href="about.html">About</a>   ||  <a href="projects.html">Projects</a>   ||  <a href="services.html">Services</a>   
+					||   <a href="https://github.com/timo0060">GitHub</a>   ||   <a href="contact.html">Contact Me</a></p>
+		</nav>
+	</header>
+	
+	<section>
+		<article>
+			<a href="top"></a><h1><u>Projects</u></h1>
+			<p class="bodyText">
+				Welcome to the page that hold some of the projects that I've completed. Click on one of the project names below to view that project.<br>
+				<ul>
+					<li><a href="#sega">Sega Genesis</a></li>
+					<li><a href="#contentManager">Content Manager</a></li>
+					<li><a href="#eggbert">EggBert</a></li>
+					<li><a href="#portfolio">Portfolio</a></li>
+					<li><a href="#salesBonus">Sales Bonues Calculator</a></li>
+				</ul>
+			</p>
+		</article>
+		<br><br><br>
+		<article>
+			<a name="sega"><h1><u>Sega Genesis</u></h1></a>
+			<p class="bodyText">
+				This was a website I made for the Sega Genesis in my Web Design class at Georgian College. It was my first real website that I've finished. I made
+				it to showcase one of the most influencial gaming consoles of my youth. The Sega Genesis helped shape my gaming life and pushed me to want to develop games myself.
+				I made sure to include a few of Sega's catch phrases of the era, as well as a small gallery for the console and the games I played.
+				It was great to see the result of just 4 months of learning and I'm proud of the way it turned out, although many changes could be made to it now to 
+				improve it's overal quality and appeal. <br><br>
+				If you would like to visit the website click <a href="http://webdesign4.georgianc.on.ca/~200244040/sega_genesis/index.html">here</a>
+			</p>
+			<p>
+				<br><br><br>
+				<a href="#top">Top of the Page</a>
+			</p>
+		</article>
+		<br><br><br>
+		<article>
+			<a name="contentManager"><h1><u>Content Manager</u></h1></a>
+			<p class="bodyText">
+				The content manager was my first big website that had PHP functionality built into it as was as mySQL. It was a final project for my Intro into 
+				Web Programming class, also at Georgian College. I am very happy with the way it turned out and the features that I have managed to include. These features
+				include: Sign Up, Login, changing the logo, editing users, adding new users, and adding new web pages. That was the first time I've done any of that with PHP on such
+				a large scale. As you can see, the design carried over to this website quite a bit, because I really enjoyed the way I managed to give it a visually appealing look.
+				<br><br>
+				If you would like to visit the website click <a href="http://webdesign4.georgianc.on.ca/~200244040/web_programming/contentmanager/default.php?id=1">here</a>
+			</p>
+			<p>
+				<br><br><br>
+				<a href="#top">Top of the Page</a>
+			</p>
+		</article>
+		<br><br><br>
+		<article>
+			<a name="eggbert"><h1><u>EggBert</u></h1></a>
+			<p class="bodyText">
+				EggBert is an Wii remote controlled head that can pivot on the X axis and the Y axis. He has an Arduino as his heart and brain. I made EggBert
+				for my Computer Architecture class at Georgian College. It was a basic final project that I think could have turned out better if I had a bigger arduino.
+				The one I had was to small to have both the motor controll and a digital screen. I decided to just have the audio and use a cardboard cut out for the face.
+				The problem there was that the Servo classes I was using interfered with the audio class I was using and neither the teacher or I could solve this problem.
+				So EggBert became a happy mute egg. 
+				<br><br>
+				If you wish to watch EggBert in action, click <a href="http://www.youtube.com/watch?v=whyV2JW5eM8&feature=share&list=UUzEPrOJChp2lpGEMcBT_Bog">here</a> 
+			</p>
+			<p>
+				<br><br><br>
+				<a href="#top">Top of the Page</a>
+			</p>
+		</article>
+		<br><br><br>
+		<article>
+			<a name="portfolio"><h1><u>Portfolio</u></h1></a>
+			<p class="bodyText">
+				The Porfolio is an assignment I did for my Advanced Web Programming class in Georgian College. It turned out great, and I tried a few new things that 
+				I've never tried before and it helped bring the whole website together. I also think that it's my most visually appealing website to date and 
+				I am very pleased with it. Although most of the design was taken from a previous assignment, <a href="#contentManager">here</a>, I feel that I improved
+				it quite a bit and made it more unique and appealing. I believe that it is a job well done, but I'm sure there are some improvements that I can make to 
+				it in the future as my skills and I develp into a more professional programmer. 
+				<br><br>
+				Wish to view it? Well you're already there! Use the navigation bar at the top to look around.
+			</p>
+			<p>
+				<br><br><br>
+				<a href="#top">Top of the Page</a>
+			</p>
+		</article>
+		<br><br><br>
+		<article>
+			<a name="salesBonus"><h1><u>Sales Bonues Calculator</u></h1></a>
+			<p class="bodyText">
+				This was the first assignment in my Rapid Application development class at Georgian College. For it being the first assignment, and the first time I used C#
+				I think it turned out great. This application allows the user to input their name, their employee number, how many hours they worked that month, and the total 
+				monthly sales. The user can then click calculate to see how much of a sales bonus they've earned, clear everything, but the monthly sales, or send it to a print 
+				preview. This application was also the first time I used the logo for Sun Lockdown. I like how it turned out, and I can't wait to add more projects like this to this list.
+				<br><br>
+				<div id="photo">
+					<img src="Images/salesbonus.png" alt="SalesBonus"/><br>
+					Screenshot of the program
+				</div>
+			</p>
+			<p>
+				<br><br><br>
+				<a href="#top">Top of the Page</a>
+			</p>
+		</article>
+		<br><br><br>
+	</section>
+	<footer>
+		<article>
+			Copyright @ 2013 Tim Radder
+		</article>
+	</footer>
+</body>
+
+</html>

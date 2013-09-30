@@ -21,7 +21,7 @@
 		var count = 2;		
 		
 		setInterval(function(){
-			$(".slider #" + count).show("slide", {direction: "right"}, 500);
+			$(".slider #" + count).delay(500).show("slide", {direction: "right"}, 500);
 			$(".slider #" + count).delay(5500).hide("slide", {direction: "left"}, 500);
 			
 			if(count == slideSize){

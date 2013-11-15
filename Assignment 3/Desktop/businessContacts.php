@@ -52,7 +52,10 @@
 						//7. Disconnect
 						mysqli_close($conn);
 					}
-				?>
+				?> 
+				
+				<br><br>
+				<a href = "logout.php">Logout</a>
 			</article>
 		</section>
 		

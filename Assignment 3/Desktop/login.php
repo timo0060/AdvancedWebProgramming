@@ -36,7 +36,7 @@
 				<div>
 					<label>Password</label>
 					<input name="password" type="password" />
-				</div>
+				</div><br><br>
 				<input type="submit" value="Login" />
 			</article>
 		</section>
